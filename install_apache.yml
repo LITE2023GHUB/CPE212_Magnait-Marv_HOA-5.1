@@ -7,6 +7,22 @@
     yum:
       update_cache: yes
 
-  - name: add PHP support for apache
+  - name: Install apache
     yum:
-      name: libapache2-mod-php
+      name: httpd
+
+  - name: add PHP support1  for apache
+    yum:
+      name: php 
+
+  - name: add PHP support2  for apache
+    yum:
+      name: php-cli
+
+  - name: add PHP support3  for apache
+    yum:
+      name: php-common 
+
+  - name: add PHP support4  for apache
+    yum:
+      name: php-fpm 
