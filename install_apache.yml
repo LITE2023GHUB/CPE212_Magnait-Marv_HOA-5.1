@@ -4,13 +4,13 @@
   tasks: 
 
   - name: update repository index
-    apt:
+    yum:
       update_cache: yes
 
   - name: install apache2 package
-    apt:
+    yum:
       name: apache2
 
   - name: add PHP support for apache
-    apt:
+    yum:
       name: libapache2-mod-php
